@@ -16,6 +16,8 @@ namespace Books
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            DocumentDBRepository<Books.Models.Book>.Initialize();
+
         }
     }
 }
